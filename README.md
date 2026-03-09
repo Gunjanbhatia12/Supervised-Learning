@@ -537,11 +537,197 @@ print("Predicted Salary:", prediction)
 
 ---
 
-## 📚 Author
+# Support Vector Machine (SVM) - Machine Learning
 
-**Gunjan**
+This project demonstrates the implementation of **Support Vector Machine (SVM)** using Python and Scikit-learn.  
+The notebook includes examples of both:
+
+- **Support Vector Classification (SVC)**
+- **Support Vector Regression (SVR)**
+
+These models are used to perform classification and regression tasks on sample datasets.
 
 ---
 
-⭐ If you find this project useful, consider giving it a **star on GitHub**.
+# Project Overview
+
+Support Vector Machine (SVM) is a powerful supervised machine learning algorithm used for both classification and regression problems.  
+It works by finding the optimal hyperplane that separates data points into different classes or predicts continuous values.
+
+In this notebook:
+
+- **SVC** is used to classify whether a student will **Pass or Fail** based on study hours.
+- **SVR** is used to **predict salary/value** based on input features.
+
+---
+
+# Technologies Used
+
+- Python
+- NumPy
+- Scikit-learn
+- Jupyter Notebook
+
+---
+
+# Installation
+
+Install the required libraries before running the notebook.
+
+```bash
+pip install numpy scikit-learn
+```
+
+---
+
+# Libraries Used
+
+```python
+from sklearn.svm import SVC
+from sklearn.svm import SVR
+import numpy as np
+```
+
+---
+
+# Support Vector Classification (SVC)
+
+### Problem
+Predict whether a student **Passes or Fails** based on **hours studied**.
+
+### Dataset
+
+| Hours Studied | Result |
+|---------------|-------|
+| 1 | Fail |
+| 2 | Fail |
+| 3 | Fail |
+| 4 | Pass |
+| 5 | Pass |
+
+### Code
+
+```python
+from sklearn.svm import SVC
+import numpy as np
+
+# Sample data (Hours studied)
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([0, 0, 0, 1, 1])  # 0 = Fail, 1 = Pass
+
+# Create model
+model = SVC(kernel='linear')
+
+# Train model
+model.fit(X, y)
+
+# Predict
+prediction = model.predict([[3.5]])
+
+print("Prediction (0=Fail, 1=Pass):", prediction)
+```
+
+### Output
+
+The model predicts whether the student will **Pass (1)** or **Fail (0)** when studying **3.5 hours**.
+
+---
+
+# Support Vector Regression (SVR)
+
+### Problem
+Predict a **numerical value (salary/value)** using regression.
+
+### Dataset
+
+| Input | Value |
+|------|------|
+| 1 | 10000 |
+| 2 | 20000 |
+| 3 | 30000 |
+| 4 | 40000 |
+| 5 | 50000 |
+
+### Code
+
+```python
+from sklearn.svm import SVR
+import numpy as np
+
+# Sample data
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([10000, 20000, 30000, 40000, 50000])
+
+# Create model
+model = SVR(kernel='linear')
+
+# Train model
+model.fit(X, y)
+
+# Predict
+prediction = model.predict([[3.5]])
+
+print("Predicted Value:", prediction)
+```
+
+### Output
+
+The model predicts a **continuous value** based on the given input.
+
+---
+
+# Key Concepts of SVM
+
+- **Hyperplane**: Decision boundary that separates data points.
+- **Support Vectors**: Data points closest to the hyperplane.
+- **Kernel Trick**: Used to transform data into higher dimensions.
+- **Margin**: Distance between hyperplane and nearest data points.
+
+Common Kernels:
+- Linear
+- Polynomial
+- RBF (Radial Basis Function)
+- Sigmoid
+
+---
+
+# Applications of SVM
+
+- Image Classification
+- Face Detection
+- Text Classification
+- Spam Detection
+- Bioinformatics
+- Financial Forecasting
+
+---
+
+# Advantages of SVM
+
+- Effective in high-dimensional spaces
+- Works well with small datasets
+- Memory efficient
+- Versatile with different kernels
+
+---
+
+# Limitations of SVM
+
+- Slow on very large datasets
+- Choosing the right kernel can be difficult
+- Sensitive to parameter tuning
+
+---
+
+# Conclusion
+
+This notebook demonstrates how **Support Vector Machines** can be applied for both **classification and regression problems** using Scikit-learn. SVM is widely used in machine learning due to its high accuracy and flexibility.
+
+---
+
+# Author
+
+**Gunjan**
+
+B.Tech Student | Machine Learning 
 
