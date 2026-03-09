@@ -210,9 +210,198 @@ After completing this project you will understand:
 
 ---
 
+# 🌳 Decision Tree Machine Learning Project
+
+This project demonstrates the implementation of **Decision Tree algorithms** using Python and Scikit-Learn.  
+It includes both **Decision Tree Classification** and **Decision Tree Regression** with simple example datasets to help understand how decision trees work.
+
+---
+
+## 📌 Project Overview
+
+Decision Trees are supervised machine learning algorithms used for:
+
+- **Classification** → Predicting categories (e.g., Pass/Fail)
+- **Regression** → Predicting continuous values (e.g., Salary prediction)
+
+This notebook explains the basic working of both models using small datasets.
+
+---
+
+## 📂 Project Structure
+
+```
+Decisiontree.ipynb   # Jupyter notebook containing model implementation
+README.md            # Project documentation
+```
+
+---
+
+## ⚙️ Technologies Used
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Mlxtend
+
+---
+
+## 📦 Required Libraries
+
+Install the required libraries using:
+
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn mlxtend
+```
+
+Or run inside the notebook:
+
+```python
+!pip install mlxtend
+```
+
+---
+
+## 📊 Part 1: Decision Tree Classification
+
+This section predicts whether a student will **Pass or Fail** based on the number of **hours studied**.
+
+### Dataset Example
+
+| Hours Studied | Result |
+|---------------|-------|
+| 1 | Fail |
+| 2 | Fail |
+| 3 | Fail |
+| 4 | Pass |
+| 5 | Pass |
+
+### Model Used
+
+```python
+DecisionTreeClassifier
+```
+
+### Output
+
+The model predicts whether a student will pass or fail based on study hours.
+
+---
+
+## 📈 Part 2: Decision Tree Regression
+
+This section predicts **salary based on experience (or input values)**.
+
+### Dataset Example
+
+| Input Value | Salary |
+|-------------|--------|
+| 1 | 10000 |
+| 2 | 20000 |
+| 3 | 30000 |
+| 4 | 40000 |
+| 5 | 50000 |
+
+### Model Used
+
+```python
+DecisionTreeRegressor
+```
+
+### Output
+
+The model predicts a **continuous value (salary)**.
+
+---
+
+## 📊 Data Visualization
+
+The notebook also uses visualization libraries:
+
+- **Matplotlib**
+- **Seaborn**
+
+These help in analyzing data distribution and patterns.
+
+---
+
+## ▶️ How to Run the Project
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/decision-tree-project.git
+```
+
+### Step 2: Navigate to the Folder
+
+```bash
+cd decision-tree-project
+```
+
+### Step 3: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+or
+
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn mlxtend
+```
+
+### Step 4: Run the Notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```
+Decisiontree.ipynb
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+After completing this project, you will understand:
+
+- What a **Decision Tree** is
+- Difference between **Classification and Regression**
+- How to implement **DecisionTreeClassifier**
+- How to implement **DecisionTreeRegressor**
+- Basic **data visualization for analysis**
+
+---
+
+## 🚀 Future Improvements
+
+Possible enhancements:
+
+- Use a **real-world dataset**
+- Add **tree visualization**
+- Implement **Random Forest**
+- Perform **hyperparameter tuning**
+- Evaluate model using **accuracy and metrics**
+
+---
+
 ## 👨‍💻 Author
 
 **Gunjan**
 
-B.Tech in CSE
+B.Tech Student | Machine Learning Enthusiast  
+Interested in AI, Data Science, and Full Stack Development.
+
 ---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a **star ⭐ on GitHub**.
+
