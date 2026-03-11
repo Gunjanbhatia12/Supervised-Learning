@@ -724,10 +724,196 @@ Common Kernels:
 This notebook demonstrates how **Support Vector Machines** can be applied for both **classification and regression problems** using Scikit-learn. SVM is widely used in machine learning due to its high accuracy and flexibility.
 
 ---
+# Gradient Boosting in Machine Learning
 
-# Author
+## 📌 Project Overview
+This project demonstrates the implementation of **Gradient Boosting algorithms** using Python and Scikit-learn.  
+It includes examples of both:
 
+- **Gradient Boosting Classifier**
+- **Gradient Boosting Regressor**
+
+Gradient Boosting is an ensemble learning technique that builds multiple weak learners (usually decision trees) sequentially, where each new model corrects the errors of the previous one.
+
+---
+
+## 🚀 Objectives
+- Understand the concept of **Gradient Boosting**
+- Implement **classification** using Gradient Boosting
+- Implement **regression** using Gradient Boosting
+- Learn how ensemble models improve prediction accuracy
+
+---
+
+## 🧠 Algorithms Used
+1. **GradientBoostingClassifier**
+2. **GradientBoostingRegressor**
+
+Both are available in the **Scikit-learn** library.
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- NumPy
+- Scikit-learn
+- Jupyter Notebook
+
+---
+
+## 📂 Project Structure
+
+```
+GradientBoosting/
+│
+├── gradientboosting.ipynb
+└── README.md
+```
+
+---
+
+## 📊 Gradient Boosting Classifier
+
+### Description
+The classifier is used for **binary classification problems**.  
+It predicts a class label based on the input feature.
+
+### Example Dataset
+
+| X | y |
+|---|---|
+|1|0|
+|2|0|
+|3|0|
+|4|1|
+|5|1|
+
+### Code Example
+
+```python
+from sklearn.ensemble import GradientBoostingClassifier
+import numpy as np
+
+# Sample Data
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([0, 0, 0, 1, 1])
+
+model = GradientBoostingClassifier()
+model.fit(X, y)
+
+prediction = model.predict([[3.5]])
+print("Prediction:", prediction)
+```
+
+### Output
+```
+Prediction: [0]
+```
+
+---
+
+## 📈 Gradient Boosting Regressor
+
+### Description
+The regressor is used for **predicting continuous values** such as salary, house price, etc.
+
+### Example Dataset
+
+| X | Salary |
+|---|---|
+|1|10000|
+|2|20000|
+|3|30000|
+|4|40000|
+|5|50000|
+
+### Code Example
+
+```python
+from sklearn.ensemble import GradientBoostingRegressor
+import numpy as np
+
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([10000, 20000, 30000, 40000, 50000])
+
+model = GradientBoostingRegressor()
+model.fit(X, y)
+
+prediction = model.predict([[3.9]])
+print("Predicted Value:", prediction)
+```
+
+### Output
+```
+Predicted Value: [value close to 39000]
+```
+
+---
+
+## ⚙️ Installation
+
+Install the required libraries using pip:
+
+```bash
+pip install numpy scikit-learn
+```
+
+---
+
+## ▶️ How to Run the Project
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/gradientboosting-project.git
+```
+
+2. Navigate to the project folder
+
+```bash
+cd gradientboosting-project
+```
+
+3. Open the notebook
+
+```bash
+jupyter notebook gradientboosting.ipynb
+```
+
+4. Run all cells to see the results.
+
+---
+
+## 📚 Concepts Covered
+
+- Ensemble Learning
+- Boosting Techniques
+- Classification Models
+- Regression Models
+- Machine Learning using Scikit-learn
+
+---
+
+## 🎯 Applications of Gradient Boosting
+
+- Loan approval prediction
+- Fraud detection
+- Stock price prediction
+- House price prediction
+- Customer churn prediction
+
+---
+
+## 👨‍💻 Author
 **Gunjan**
 
-B.Tech Student | Machine Learning 
+---
+
+## ⭐ Conclusion
+Gradient Boosting is a powerful ensemble learning method that improves model performance by combining multiple weak learners sequentially. It is widely used in real-world machine learning problems due to its high accuracy and flexibility.
+
+---
+
+⭐ If you found this project helpful, consider giving it a star!
 
