@@ -262,6 +262,6 @@ By completing this project, you will understand:
 
 # 👨‍💻 Author
 
-**Gunjan Bhatia**
+**Gunjan**
 
 Artificial Intelligence & Machine Learning Enthusiast
